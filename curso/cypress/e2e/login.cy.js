@@ -8,7 +8,45 @@ beforeEach(() => {
 describe ('Login', () => {
 
     it('Login com sucesso', () => {
-        //pegar os campos e preencher
+        //vou chamar o nome do método que coloquei em Command e as variáveis
+        const email = Cypress.env('EMAIL');
+        const password = Cypress.env('PASSOWORD');
+
+        cy.Login(email, password);
+    });
+
+    it('Login com email válido e senha inválida', () => {
+        cy.get('#email').type(Cypress.env('EMAIL'));
+        cy.get('#password').type(Cypress.env('PASSOWORD_INVALIDO'));
+        cy.get('#login').click();
+        cy.MsgLoginFalho();
+    });
+
+    it('Login com email inválido e senha válida', () => {
+        cy.get('#email').type(Cypress.env('EMAIL_INVALIDO'));
+        cy.get('#password').type(Cypress.env('PASSOWORD'));
+        cy.get('#login').click();
+        cy.MsgLoginFalho();
+    });
+});
+
+
+
+// ------------------------------------------------------------------------
+// Código antigo, antes de reestruturar
+/*
+// será da Feature Login
+
+beforeEach(() => {
+    //entrar na URL
+    cy.visit('https://automacao.qacoders-academy.com.br/login');
+});
+
+describe ('Login', () => {
+
+    it('Login com sucesso', () => {
+      
+         //pegar os campos e preencher
         cy.get('#email').type('sysadmin@qacoders.com');
         cy.get('#password').type('1234@Test');
 
@@ -24,7 +62,9 @@ describe ('Login', () => {
 
     })
 
+
     it('Login com email válido e senha inválida', () => {
+        
         //pegar os campos e preencher
         cy.get('#email').type('sysadmin@qacoders.com');
         cy.get('#password').type('1234');
@@ -52,3 +92,5 @@ describe ('Login', () => {
 
     })
 })
+
+*/

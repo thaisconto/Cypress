@@ -3,3 +3,4 @@ package-lock.json
 *.log
 screenshots
 videos
+cypress.env.json
