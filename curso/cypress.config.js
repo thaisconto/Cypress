@@ -6,9 +6,9 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
   },
-  screenshotOnRunFailure: true,
-  screenshotsFolder: 'cypress/screenshots',
-  video: true,
+  screenshotOnRunFailure: true, // quando meu teste falhar, vai tirar print
+  screenshotsFolder: 'cypress/screenshots', // vai armazenar nessa pasta
+  video: true, // habilidtar o vídeo
   videoCompression: false,
-  videosFolder: 'cypress/videos'
+  videosFolder: 'cypress/videos'  // vai armazenar nessa pasta
 });
