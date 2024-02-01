@@ -1,6 +1,28 @@
-# Projeto automação WEB com Cypress - Nível basíco
+# Projeto automação WEB com Cypress -Desafio proposto pela RPE
 
-Projeto de automação web com Cypress, com ele você irá conseguir escrever seus primeiros casos de testes com uma ferramenta poderosa cheia de recursos que facilitam a sua vida.
+Projeto de automação web com Cypress, utilizando JavaScript.
+
+Automação disponível [aqui](https://github.com/thaisconto/Cypress/tree/main/desafioRPE)
+
+Para executar teste deve-se inserir o comando: npm run cypress:open
+ <img src = print1.png>
+
+Selecionar o teste E2E:
+<img src = print2.png>
+
+Browser Electron:
+<img src = print3.png>
+
+Teste chamado Login:
+<img src = print4.png>
+
+Irá executar automaticamente, gerando os seguintes resultados:
+ <img src = print5.png>
+ 
+Primeiro teste: Login e Logout com sucesso.
+Segundo teste: Login com usuário válido e password inválido.
+Terceiro teste: Login com usuário inválido e password válido.
+
 
 ## Pré requisitos para utilizar o projeto
 
@@ -40,36 +62,3 @@ Projeto de automação web com Cypress, com ele você irá conseguir escrever se
     - https://docs.cypress.io/guides/core-concepts/writing-and-organizing-tests#Folder-Structure
 
 
-## Configurando ambiente para começar a usar o Cypress
-Agora iremos configurar o ambiente para iniciarmos nosso projeto com o Cypress. Para isso é necessário realizar o download da IDE do VSCODE 
-
-### 01 Instalação inicial
-- Faça o download o NodeJS e instale a versão compatível com seu Sistema Operacional;
-- Faça o download e instale o VSCODE ou outra IDE de sua preferência;
-
-### 02 Instale o Cypress
-```bash
-npm install cypress --save-dev
-```
-
-### 03 Observação
-Está configurado no package.json, um bloco de script para executar o cypress
-
-```bash
-"scripts": {
-    "cypress:open": "cypress open"
-  }
-```
-A sintaxe "cypress:open" determina como será executado o cypress, recebendo a instrução padrão "cypress open"
-
-### 04 Executando o cypress
-
-```bash
-   npm run cypress:open
-```
-
-Pronto agora é só criar seus cenários de testes e aproveitar o melhor da ferramenta.
-
-Obrigado por consumirem nossos conteúdos.
-
-Qa.Coders Academy Formando Profissionais de Qualidade.
