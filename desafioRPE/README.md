@@ -5,22 +5,29 @@ Projeto de automação web com Cypress, utilizando JavaScript.
 Automação disponível [aqui](https://github.com/thaisconto/Cypress/tree/main/desafioRPE)
 
 Para executar teste deve-se inserir o comando: npm run cypress:open
- <img src = print1.png>
+
+<img src = print1.png>
 
 Selecionar o teste E2E:
+
 <img src = print2.png>
 
 Browser Electron:
+
 <img src = print3.png>
 
 Teste chamado Login:
+
 <img src = print4.png>
 
 Irá executar automaticamente, gerando os seguintes resultados:
- <img src = print5.png>
+
+<img src = print5.png>
  
 Primeiro teste: Login e Logout com sucesso.
+
 Segundo teste: Login com usuário válido e password inválido.
+
 Terceiro teste: Login com usuário inválido e password válido.
 
 
